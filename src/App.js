@@ -58,8 +58,9 @@ export default function App() {
                   // Remember to replace "1" below with repository ID: {`repository-likes-${repository.id}`}
                   testID={`repository-likes-${r.id}`}
                 >
-                  {r.likes === 1 && `${r.likes} curtida`}
-                  {r.likes > 1 && `${r.likes} curtidas`}
+                  {/* {r.likes === 1 && `${r.likes} curtida`}
+                  {r.likes > 1 && `${r.likes} curtidas`} */}
+                  {r.likes} curtida{r.likes > 1 ? "s" : ""}
                 </Text>
               </View>
 
