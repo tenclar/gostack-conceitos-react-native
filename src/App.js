@@ -67,6 +67,7 @@ export default function App() {
                 style={styles.button}
                 onPress={() => handleLikeRepository(r.id)}
                 // Remember to replace "1" below with repository ID: {`like-button-${repository.id}`}
+
                 testID={`like-button-${r.id}`}
               >
                 <Text style={styles.buttonText}>Curtir</Text>
